@@ -4,12 +4,67 @@ const Intern = require("./lib/Intern");
 const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
+const questions = require("./lib/questions");
+const { writeFile } = require("fs/promises");
 
 const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
+// const Employee = require("./lib/Employee");
+const burrito = [];
 
+const collectInputs = async (inputs = []) => {
+  const { again, ...answers } = await inquirer.prompt(questions);
+  const newInputs = { ...inputs, answers };
+  if (answers.employeeType === "Manager") {
+    let emp = new Manager(
+      answers.name,
+      answers.id,
+      answers.email,
+      answers.officeNumber
+    );
+    burrito.push(emp);
+  }
+  if (answers.employeeType === "Engineer") {
+    let emp = new Engineer(
+      answers.name,
+      answers.id,
+      answers.email,
+      answers.github
+    );
+    burrito.push(emp);
+  }
+  if (answers.employeeType === "Intern") {
+    let emp = new Intern(
+      answers.name,
+      answers.id,
+      answers.email,
+      answers.school
+    );
+    burrito.push(emp);
+  }
+
+  //   burrito.push(emp);
+  return again ? collectInputs(newInputs) : newInputs;
+};
+
+const init = async () => {
+  await collectInputs();
+  console.log(burrito);
+  let template = render(burrito);
+  fs.writeFile(outputPath, template, (err) =>
+    err ? console.log(err) : console.log("Success!")
+  );
+};
+
+init();
+// async function BuildSomething(employees) {
+//     // render(employees);
+// }
+// BuildSomething();
+
+// });
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)

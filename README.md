@@ -29,7 +29,7 @@ node app.js
 
 * Video
 
-Watch demo video [here](https://youtu.be/3PE5C_9By3s){:target="_blank"}.
+Watch demo video [Here](https://youtu.be/3PE5C_9By3s).
 
 * Instructions
 

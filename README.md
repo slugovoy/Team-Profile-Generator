@@ -2,7 +2,7 @@
 
 The application will prompt the user for information about the team manager and then information about the team members. The user can input any number of team members, and they may be a mix of engineers and interns.
 
-Checkout the [team.html](./output/team.html) in this repo that was created as an example. Also, you can check out the walkthrough video [here](https://youtu.be/3PE5C_9By3s){:target="_blank"}.
+Checkout the [team.html](./output/team.html) in this repo that was created as an example. Also, you can check out the walkthrough video <a href="https://youtu.be/3PE5C_9By3s" target="_blank">Here</a>.
 
 ## Table of Contents
 * [Installation](#installation)

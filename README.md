@@ -2,7 +2,7 @@
 
 The application will prompt the user for information about the team manager and then information about the team members. The user can input any number of team members, and they may be a mix of engineers and interns.
 
-Checkout the [team.html](./output/team.html) in this repo that was created as an example. Also you can check out the walk through video [here]()
+Checkout the [team.html](./output/team.html) in this repo that was created as an example. Also, you can check out the walkthrough video [here]()
 
 ## Table of Contents
 * [Installation](#installation)
@@ -20,7 +20,7 @@ To generate your own Team Profile, first run `npm install` to install the follow
 * `inquirer` that will prompt you for your inputs from the command line
 * `jest` that you can use to test the app
 
-The application itself can be invoked with following command
+The application itself can be invoked with the following command
 
 ```
 node app.js
@@ -31,11 +31,11 @@ node app.js
 
 ![homeworkDemoVideo]()
 
-When you run `node app.js`, the app uses the `inquirer package` to ask you in the command line a questions about manager's and employee"s information, such as GitHub username and email address, id and etc.
+When you run `node app.js`, the app uses the `inquirer package` to ask you in the command line questions about manager's and employee"s information, such as GitHub username and email address, id and etc.
 
-Than, application will generate HTML file templates based on your responses to the inquirer prompts.
+Then, the application will generate HTML file templates based on your responses to the inquirer prompts.
 
-And at the end, `writeFile` is used to generate main HTML file with content according to your answers.
+And at the end, `writeFile` is used to generate the main HTML file with content according to your answers.
 
 Also, you can run `npm run test` to test this application.
 

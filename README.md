@@ -31,6 +31,10 @@ node app.js
 
 Watch demo video [Here](https://youtu.be/3PE5C_9By3s).
 
+* GIF
+
+![Demo](./lib/Demo.gif)
+
 * Instructions
 
 When you run `node app.js`, the app uses the `inquirer package` to ask you in the command line questions about manager's and employee"s information, such as GitHub username and email address, id and etc.

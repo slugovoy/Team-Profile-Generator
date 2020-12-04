@@ -2,7 +2,7 @@
 
 The application will prompt the user for information about the team manager and then information about the team members. The user can input any number of team members, and they may be a mix of engineers and interns.
 
-Checkout the [team.html](./output/team.html) in this repo that was created as an example. Also, you can check out the walkthrough video [here]()
+Checkout the [team.html](./output/team.html) in this repo that was created as an example. Also, you can check out the walkthrough video [here](https://youtu.be/3PE5C_9By3s).
 
 ## Table of Contents
 * [Installation](#installation)
@@ -27,9 +27,11 @@ node app.js
 ```
 ## Usage
 
-* Video and instructions for use:
+* Video
 
-![homeworkDemoVideo]()
+Watch demo video [here](https://youtu.be/3PE5C_9By3s).
+
+* Instructions
 
 When you run `node app.js`, the app uses the `inquirer package` to ask you in the command line questions about manager's and employee"s information, such as GitHub username and email address, id and etc.
 
